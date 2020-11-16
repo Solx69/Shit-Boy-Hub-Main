@@ -1,4 +1,5 @@
 if game.PlaceId == 5617626326 then
+-- Blood Samurai 2
 loadstring(game:HttpGet('https://pastebin.com/raw/Hrkp3gx4'))();
 
 
