@@ -1,0 +1,6 @@
+if game.PlaceId == 5617626326 then
+loadstring(game:HttpGet('https://pastebin.com/raw/Hrkp3gx4'))();
+
+
+
+end
