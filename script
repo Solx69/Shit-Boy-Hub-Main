@@ -1,7 +1,10 @@
 if game.PlaceId == 5617626326 then
 -- Blood Samurai 2
-loadstring(game:HttpGet('https://pastebin.com/raw/Hrkp3gx4'))();
+loadstring(game:HttpGet('https://pastebin.com/raw/Hrkp3gx4'))()
 elseif game.PlaceId == 4390380541 then
 -- Rumble Quest
 loadstring(game:HttpGet('https://pastebin.com/raw/7a197LgY'))()
+elseif game.PlaceId == 5827078246 then
+-- Coins Hero
+loadstring(game:HttpGet('https://pastebin.com/raw/69dwQCG8'))()
 end
