@@ -7,4 +7,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/7a197LgY'))()
 elseif game.PlaceId == 5827078246 then
 -- Coins Hero
 loadstring(game:HttpGet('https://pastebin.com/raw/69dwQCG8'))()
+elseif game.PlaceId == 5405331069 then
+-- Cube Piece
+loadstring(game:HttpGet('https://pastebin.com/raw/Qzq7JbdN'))()
 end
