@@ -1,4 +1,4 @@
-tier = 0 -- Tier You Want The Boss Raid To Be
+tier = 1 -- Tier You Want The Boss Raid To Be
 private = true -- Determines If You Want The Lobby To Be Private Or Not
 shared.Friends = ("name of friend here") -- Name Of A Friend You Want To Whitelist (if lobby is private)
 startTime = 0 -- Time Before Starting The Raid
