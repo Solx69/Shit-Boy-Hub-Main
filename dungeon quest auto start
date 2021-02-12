@@ -1,0 +1,60 @@
+dungeon = "Volcanic Chambers" -- Desert Temple, Winter Outpost, Pirate Island, Kings Castle, The Underworld, Samurai Palace, The Canals, Ghastly Harbor, Steampunk Sewers, Orbital Outpost, Volcanic Chambers, Aquatic Temple
+difficulty = "Nightmare" -- Easy, Medium, Hard, Insane, Nightmare
+hardcore = "true" -- true, false
+
+-- Made By Sol#2278
+-- discord.gg/aqh7pAvgba
+
+local zoom = true
+
+repeat
+    wait()
+until game:IsLoaded()
+
+if game.PlaceId == 2414851778 then
+    if not game.Players.LocalPlayer.Character then
+        game.Players.LocalPlayer.CharacterAdded:Connect(
+            function()
+                local args = {
+                    [1] = dungeon,
+                    [2] = difficulty,
+                    [3] = 0,
+                    [4] = hardcore,
+                    [5] = false,
+                    [6] = false
+                }
+
+                game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(args))
+                game:GetService("ReplicatedStorage").remotes.startDungeon:FireServer()
+            end
+        )
+        repeat
+            wait()
+            game:GetService("ReplicatedStorage").remotes.loadPlayerCharacter:FireServer()
+        until game.Players.LocalPlayer.Character
+    else
+        local args = {
+            [1] = dungeon,
+            [2] = difficulty,
+            [3] = 0,
+            [4] = hardcore,
+            [5] = false,
+            [6] = false
+        }
+
+        game:GetService("ReplicatedStorage").remotes.createLobby:InvokeServer(unpack(args))
+        game:GetService("ReplicatedStorage").remotes.startDungeon:FireServer()
+    end
+else
+    game:GetService("ReplicatedStorage").remotes.changeStartValue:FireServer()
+    pcall(
+        function()
+            while true do
+                if zoom then
+                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 32
+                end
+                wait()
+            end
+        end
+    )
+end
