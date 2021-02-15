@@ -1,6 +1,6 @@
 dungeon = "Volcanic Chambers" -- Desert Temple, Winter Outpost, Pirate Island, Kings Castle, The Underworld, Samurai Palace, The Canals, Ghastly Harbor, Steampunk Sewers, Orbital Outpost, Volcanic Chambers, Aquatic Temple
 difficulty = "Nightmare" -- Easy, Medium, Hard, Insane, Nightmare
-hardcore = "true" -- true, false
+hardcore = true -- true, false
 
 -- Made By Sol#2278
 -- discord.gg/aqh7pAvgba
